@@ -1,0 +1,88 @@
+.about-us {
+  width: 100%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: gray;
+}
+
+.about-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.about-col img {
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+}
+.about-col h1 {
+  padding-top: 0;
+  text-align: center;
+  color: blue;
+  font-weight: 600;
+}
+.about-col p {
+  padding: 15px 0 25px;
+  margin: 20px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 30px; /* Adjust the gap between images as needed */
+}
+
+/* main */
+.features {
+  min-height: 100vh;
+  padding: 60px 20px;
+  position: relative;
+}
+
+/* cards */
+.container {
+  max-width: 100vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* individual cards */
+.card {
+  background: blue;
+  border-radius: 30px;
+  padding: 55px 48px;
+  border-radius: 30px;
+  min-height: 100px;
+}
+/* heading */
+.card h3 {
+  color: black;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.card p {
+  color: white;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.card:hover {
+  background: black;
+  color: rgb(68, 68, 226);
+  transition: 0.5s;
+}
+.book-demo {
+  display: inline-block;
+  background: #f44336;
+  color: #fff;
+  padding: 15px 30px;
+  margin-top: 40px;
+  margin-left: 40px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

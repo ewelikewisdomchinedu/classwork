@@ -1,10 +1,11 @@
 import React from "react";
-import LandingPageScreens from "./Screens/LandingPageScreens";
+import LandingPageScreens from "./components/Screens/LandingPageScreens";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import ContactUsScreens from "./Screens/ContactUsScreens";
-import AboutScreens from "./Screens/AboutScreens";
-import Blog from "./Screens/BlogScreens";
+import AboutScreens from "./components/Screens/AboutScreens";
+import ContactUsScreens from "./components/Screens/ContactUsScreens";
+import Blog from "./components/Screens/BlogScreens";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -13,10 +14,11 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<LandingPageScreens />} />
-        <Route path="/contact" element={<ContactUsScreens />} />
-        <Route path="/about" element={<AboutScreens />} />
+        <Route path="/AboutScreens" element={<AboutScreens />} />
+        <Route path="/ContactUsScreens" element={<ContactUsScreens />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

@@ -5,8 +5,22 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <section className="header">
-        <nav>
+      <section>
+        <header>
+          <div className="nav-links">
+            <Link to="/">Home</Link>
+          </div>
+          <div className="nav-links">
+            <Link to="/AboutScreens">About</Link>
+          </div>
+          <div className="nav-links">
+            <Link to="/ContactUsScreens">Contact</Link>
+          </div>
+          <div className="nav-links">
+            <Link to="/Blog">Blog</Link>
+          </div>
+
+          {/* <nav>
           <a href="index.html">
             <img src="images/logo.png" className="logo" />
           </a>
@@ -16,13 +30,13 @@ const Header = () => {
                 <Link to="/">HOME</Link>
               </li>
               <li>
-                <Link to="/About">ABOUT</Link>
+                <Link to="/about">ABOUT</Link>
               </li>
               <li>
                 <Link to="/course">COURSE</Link>
               </li>
               <li>
-                <Link to="/Blog">BLOG</Link>
+                <Link to="/blog">BLOG</Link>
               </li>
               <li>
                 <Link to="/Contact">CONTACT</Link>
@@ -42,7 +56,8 @@ const Header = () => {
           <a href="" className="hero-btn">
             Visit Us To Know More
           </a>
-        </div>
+        </div> */}
+        </header>
       </section>
     </div>
   );

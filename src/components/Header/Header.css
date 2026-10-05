@@ -1,5 +1,38 @@
 /* HEADER */
-.header {
+section header {
+  display: flex;
+  width: 100%;
+  height: 6.6vh;
+  justify-content: right;
+  background-color: black;
+  /* position: fixed; */
+}
+.nav-links {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 25px;
+}
+header .nav-links a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+header .nav-links a:hover {
+  color: antiquewhite;
+  border-radius: 10%;
+}
+header .nav-links a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+header .nav-links a:hover::after {
+  width: 100%;
+}
+/* .header {
   min-height: 100vh;
   width: 100%;
   background-color: #067bff;
@@ -41,8 +74,8 @@ nav {
 }
 .nav-links ul li:hover::after {
   width: 100%;
-}
-.text-box {
+} */
+/* .text-box {
   width: 90%;
   color: #fff;
   position: absolute;
@@ -74,4 +107,4 @@ nav {
   border: 1px solid #f44336;
   background: #f44336;
   transition: 1s;
-}
+} */
